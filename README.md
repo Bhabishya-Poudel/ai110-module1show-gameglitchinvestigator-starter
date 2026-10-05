@@ -64,13 +64,15 @@ Describe your fixed game in numbered steps so a reader can follow along without 
 ## 🧪 Test Results
 
 ```
-plugins: anyio-4.15.1
-collected 9 items                                                                                                              
+$ python -m pytest tests/ -v
+collected 3 items
 
-tests/test_game_logic.py .........                                                                                       [100%]
+tests/test_game_logic.py::test_winning_guess PASSED                      [ 33%]
+tests/test_game_logic.py::test_guess_too_high PASSED                     [ 66%]
+tests/test_game_logic.py::test_guess_too_low PASSED                      [100%]
 
-====================================================== 9 passed in 0.01s =======================================================
-
+============================== 3 passed in 0.01s ===============================
+```
 
 ## 🚀 Stretch Features
 
